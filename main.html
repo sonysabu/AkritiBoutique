@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akriti Boutique</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #F7F7F7;
+            color: #333;
+            padding-top: 60px;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #1b1a1c;
+            padding: 10px;
+        }
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #fff;
+            font-weight: 500;
+        }
+        .navbar-nav .nav-link {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #fff;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #f4c6d2;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('images/bg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.6);
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+            color: white;
+        }
+        .btn-elegant {
+            background-color: #f4c6d2;
+            color: #6a3e8d;
+            font-weight: 600;
+            padding: 10px 25px;
+            border-radius: 50px;
+            transition: all 0.3s ease-in-out;
+            border: none;
+        }
+        .btn-elegant:hover {
+            background-color: #6a3e8d;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        /* Collections Section */
+        .card {
+            border: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 250px;
+        }
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a181b;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer a {
+            color: #f4c6d2;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: white;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .hero {
+                height: 50vh;
+                padding: 20px;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .card {
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Akriti Boutique</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Elevate Your Style with Akriti Boutique</h1>
+        <p>Experience the art of luxury fashion with our exquisite collections.</p>
+        <a href="/book.html" class="btn btn-elegant">Book Now</a>
+    </div>
+
+    <!-- Collections Section -->
+    <div class="container mt-5">
+        <h2 class="text-center section-heading">Our Latest Collections</h2>
+        <p class="text-center">Explore our newest arrivals, exclusively curated for you.</p>
+
+        <div class="row row-cols-2 row-cols-md-3 g-4">
+            <div class="col"><div class="card"><img src="images/work1.jpg" alt="Collection 1"></div></div>
+            <div class="col"><div class="card"><img src="images/work2.jpg" alt="Collection 2"></div></div>
+            <div class="col"><div class="card"><img src="images/work3.jpg" alt="Collection 3"></div></div>
+            <div class="col"><div class="card"><img src="images/work4.jpg" alt="Collection 4"></div></div>
+            <div class="col"><div class="card"><img src="images/work5.jpg" alt="Collection 5"></div></div>
+            <div class="col"><div class="card"><img src="images/work6.jpg" alt="Collection 6"></div></div>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="/collections.html" class="btn btn-elegant">View More</a>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="/linger.html" class="btn btn-elegant">See our Lingerie Collections</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+        <div class="container">
+            <p>📍 Pattambi Road, Kunnamkulam, Thrissur | 📞 9446990927</p>
+            <p>
+                <a href="https://wa.me/9446990927"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/AkritiBoutique"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/akritiboutiqueofficial"><i class="fab fa-instagram"></i></a>
+            </p>
+            <p>&copy; 2025 Akriti Boutique. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
