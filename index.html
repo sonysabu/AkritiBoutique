@@ -1,207 +1,464 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akriti Boutique</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Akriti Boutique</title>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
 
-    <style>
-        /* General Styles */
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: #F7F7F7;
-            color: #333;
-            padding-top: 60px;
-            line-height: 1.6;
-        }
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
 
-        /* Navbar */
-        .navbar {
-            background-color: #1b1a1c;
-            padding: 10px;
-        }
-        .navbar-brand {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            color: #fff;
-            font-weight: 500;
-        }
-        .navbar-nav .nav-link {
-            font-weight: 600;
-            font-size: 1.1rem;
-            color: #fff;
-            text-transform: uppercase;
-            transition: color 0.3s;
-        }
-        .navbar-nav .nav-link:hover {
-            color: #f4c6d2;
-        }
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display&display=swap" rel="stylesheet"/>
 
-        /* Hero Section */
-        .hero {
-            background-image: url('images/bg.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 60vh;
-            color: white;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.6);
-            padding: 20px;
-        }
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            color: white;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-        }
-        .hero p {
-            font-size: 1.2rem;
-            font-weight: 300;
-            margin-bottom: 20px;
-            color: white;
-        }
-        .btn-elegant {
-            background-color: #f4c6d2;
-            color: #6a3e8d;
-            font-weight: 600;
-            padding: 10px 25px;
-            border-radius: 50px;
-            transition: all 0.3s ease-in-out;
-            border: none;
-        }
-        .btn-elegant:hover {
-            background-color: #6a3e8d;
-            color: #fff;
-            transform: translateY(-2px);
-        }
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #F7F7F7;
+      color: #333;
+      padding-top: 60px;
+      line-height: 1.6;
+    }
 
-        /* Collections Section */
-        .card {
-            border: none;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            height: 250px;
-        }
-        .card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-        }
+    .navbar {
+      background-color: #1b1a1c;
+      padding: 10px;
+    }
 
-        /* Footer */
-        footer {
-            background-color: #1a181b;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        footer a {
-            color: #f4c6d2;
-            margin: 0 10px;
-            transition: color 0.3s;
-        }
-        footer a:hover {
-            color: white;
-        }
+    .navbar-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: #fff;
+      font-weight: 500;
+    }
 
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .hero {
-                height: 50vh;
-                padding: 20px;
-            }
-            .hero h1 {
-                font-size: 2rem;
-            }
-            .hero p {
-                font-size: 1rem;
-            }
-            .card {
-                height: 220px;
-            }
-        }
-    </style>
+    .navbar-nav .nav-link {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #fff;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #f4c6d2;
+    }
+
+    .hero {
+      background-image: url('images/bg.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.6);
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .btn-elegant {
+      background-color: #f4c6d2;
+      color: #6a3e8d;
+      font-weight: 600;
+      padding: 10px 25px;
+      border-radius: 50px;
+      transition: all 0.3s ease-in-out;
+      border: none;
+    }
+
+    .btn-elegant:hover {
+      background-color: #6a3e8d;
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .card {
+      border: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 250px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    footer {
+      background-color: #1a181b;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer a {
+      color: #f4c6d2;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    footer i {
+      font-size: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        height: 50vh;
+        padding: 20px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .card {
+        height: 220px;
+      }
+    }
+
+    .chat-icons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .chat-icon {
+      background-color: #25D366;
+      color: white;
+      font-size: 1.5rem;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      text-decoration: none;
+      transition: transform 0.2s, background-color 0.3s;
+    }
+
+    .chat-icon:hover {
+      transform: scale(1.1);
+      background-color: #128C7E;
+    }
+
+    .chat-icon.message {
+      background-color: #6a3e8d;
+    }
+
+    .chat-icon.message:hover {
+      background-color: #4e2b6a;
+    }
+
+    .chatbot {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      width: 300px;
+      height: 400px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      display: none;
+      flex-direction: column;
+      overflow: hidden;
+      z-index: 999;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .chat-header {
+      background-color: #6a3e8d;
+      color: #fff;
+      padding: 10px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .close-btn {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .chat-messages {
+      flex: 1;
+      padding: 10px;
+      overflow-y: auto;
+      font-size: 14px;
+    }
+
+    .chat-messages .user {
+      text-align: right;
+      color: #6a3e8d;
+      margin: 5px 0;
+    }
+
+    .chat-messages .bot {
+      text-align: left;
+      color: #333;
+      margin: 5px 0;
+    }
+
+    .chat-form {
+      display: flex;
+      border-top: 1px solid #eee;
+    }
+
+    .chat-form input {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      outline: none;
+    }
+
+    .chat-form button {
+      padding: 0 15px;
+      background: #f4c6d2;
+      border: none;
+      color: #6a3e8d;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .chat-buttons {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .chat-buttons button {
+      background-color: #f4c6d2;
+      color: #6a3e8d;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .chat-buttons button:hover {
+      background-color: #6a3e8d;
+      color: white;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Akriti Boutique</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Akriti Boutique</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Hero Section -->
-    <div class="hero">
-        <h1>Elevate Your Style with Akriti Boutique</h1>
-        <p>Experience the art of luxury fashion with our exquisite collections.</p>
-        <a href="/book.html" class="btn btn-elegant">Book Now</a>
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Elevate Your Style with Akriti Boutique</h1>
+    <p>Experience the art of luxury fashion with our exquisite collections.</p>
+    <a href="/book.html" class="btn btn-elegant">Book Now</a>
+  </div>
+
+  <!-- Collections Section -->
+  <div class="container mt-5">
+    <h2 class="text-center section-heading">Our Latest Collections</h2>
+    <p class="text-center">Explore our newest arrivals, exclusively curated for you.</p>
+
+    <div class="row row-cols-2 row-cols-md-3 g-4">
+      <div class="col"><div class="card"><img src="images/work1.jpg" alt="Collection 1"></div></div>
+      <div class="col"><div class="card"><img src="images/work2.jpg" alt="Collection 2"></div></div>
+      <div class="col"><div class="card"><img src="images/work3.jpg" alt="Collection 3"></div></div>
+      <div class="col"><div class="card"><img src="images/work4.jpg" alt="Collection 4"></div></div>
+      <div class="col"><div class="card"><img src="images/work5.jpg" alt="Collection 5"></div></div>
+      <div class="col"><div class="card"><img src="images/work6.jpg" alt="Collection 6"></div></div>
     </div>
 
-    <!-- Collections Section -->
-    <div class="container mt-5">
-        <h2 class="text-center section-heading">Our Latest Collections</h2>
-        <p class="text-center">Explore our newest arrivals, exclusively curated for you.</p>
-
-        <div class="row row-cols-2 row-cols-md-3 g-4">
-            <div class="col"><div class="card"><img src="images/work1.jpg" alt="Collection 1"></div></div>
-            <div class="col"><div class="card"><img src="images/work2.jpg" alt="Collection 2"></div></div>
-            <div class="col"><div class="card"><img src="images/work3.jpg" alt="Collection 3"></div></div>
-            <div class="col"><div class="card"><img src="images/work4.jpg" alt="Collection 4"></div></div>
-            <div class="col"><div class="card"><img src="images/work5.jpg" alt="Collection 5"></div></div>
-            <div class="col"><div class="card"><img src="images/work6.jpg" alt="Collection 6"></div></div>
-        </div>
-
-        <div class="text-center mt-4">
-            <a href="/collections.html" class="btn btn-elegant">View More</a>
-        </div>
-
-        <div class="text-center mt-4">
-            <a href="/linger.html" class="btn btn-elegant">See our Lingerie Collections</a>
-        </div>
+    <div class="text-center mt-4">
+      <a href="/collections.html" class="btn btn-elegant">View More</a>
     </div>
 
-    <!-- Footer -->
-    <footer class="mt-5">
-        <div class="container">
-            <p>📍 Pattambi Road, Kunnamkulam, Thrissur | 📞 9446990927</p>
-            <p>
-                <a href="https://wa.me/9446990927"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://www.facebook.com/AkritiBoutique"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/akritiboutiqueofficial"><i class="fab fa-instagram"></i></a>
-            </p>
-            <p>&copy; 2025 Akriti Boutique. All rights reserved.</p>
-        </div>
-    </footer>
+    <div class="text-center mt-4">
+      <a href="/linger.html" class="btn btn-elegant">See our Lingerie Collections</a>
+    </div>
+  </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Footer -->
+  <footer class="mt-5">
+    <div class="container">
+      <p>📍 Pattambi Road, Kunnamkulam, Thrissur | 📞 9446990927 | 9656990927</p>
+      <p>
+        <a href="https://wa.me/9446990927"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/AkritiBoutique"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/akritiboutiqueofficial"><i class="fab fa-instagram"></i></a>
+      </p>
+      <p>&copy; 2025 Akriti Boutique. All rights reserved.</p>
+    </div>
+  </footer>
 
+  <!-- Floating Chat Icons -->
+  <div class="chat-icons">
+    <a href="https://wa.me/9446990927" class="chat-icon whatsapp" target="_blank" title="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="#" class="chat-icon message" onclick="toggleChatbot()" title="Chat with us">
+      <i class="fas fa-comment-dots"></i>
+    </a>
+  </div>
+
+  <!-- Chatbot -->
+  <div id="chatbot" class="chatbot">
+    <div class="chat-header">
+      <span>Akriti Assistant</span>
+      <button class="close-btn" onclick="toggleChatbot()">×</button>
+    </div>
+    <div id="chat-messages" class="chat-messages"></div>
+    <form id="chat-form" class="chat-form">
+      <input type="text" id="chat-input" placeholder="Type a message..." required />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function toggleChatbot() {
+      const bot = document.getElementById('chatbot');
+      bot.style.display = bot.style.display === 'flex' ? 'none' : 'flex';
+    }
+
+    const form = document.getElementById("chat-form");
+    const messages = document.getElementById("chat-messages");
+    const input = document.getElementById("chat-input");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const userText = input.value.trim();
+      if (!userText) return;
+
+      appendMessage("user", userText);
+      input.value = "";
+
+      setTimeout(() => {
+        handleBotReply(userText.toLowerCase());
+      }, 500);
+    });
+
+    function appendMessage(sender, text, isHTML = false) {
+      const msg = document.createElement("div");
+      msg.className = sender;
+      msg.innerHTML = isHTML ? text : text.replace(/\n/g, "<br>");
+      messages.appendChild(msg);
+      messages.scrollTop = messages.scrollHeight;
+    }
+
+    function handleBotReply(message) {
+      if (["hi", "hello", "hey"].some(greet => message.includes(greet))) {
+        appendMessage("bot", `
+          Hi there 👋 What would you like to know?<br>
+          <div class="chat-buttons">
+            <button onclick="handleQuickReply('price')">Price</button>
+            <button onclick="handleQuickReply('open')">Open Time</button>
+            <button onclick="handleQuickReply('close')">Close Time</button>
+            <button onclick="handleQuickReply('contact')">Contact Number</button>
+            <button onclick="handleQuickReply('location')">Location</button>
+          </div>
+        `, true);
+        return;
+      }
+
+      const reply = getBotReply(message);
+      appendMessage("bot", reply);
+    }
+
+    function handleQuickReply(option) {
+      let userInput;
+      switch (option) {
+        case 'price': userInput = "Price"; break;
+        case 'open': userInput = "Open time"; break;
+        case 'close': userInput = "Close time"; break;
+        case 'contact': userInput = "Contact number"; break;
+        case 'location': userInput="Location"; break
+        default: return;
+      }
+
+      appendMessage("user", userInput);
+      const reply = getBotReply(option);
+      setTimeout(() => appendMessage("bot", reply), 500);
+    }
+
+    function getBotReply(message) {
+      if (message.includes("price")) {
+        return "Our prices start depending on the design and fabric.";
+      }
+      if (message.includes("open")) {
+        return "We open at 10:00 AM.";
+      }
+      if (message.includes("close")) {
+        return "We close at 7:00 PM.";
+      }
+      if (message.includes("contact") || message.includes("number") || message.includes("phone")) {
+        return "You can contact us at 📞 9446990927 or 📞 9656990927.";
+      }
+      if (message.includes("location")) {
+        return "Pattambi road kunnamkulam.if you have any doubts regarding te location you can check our map in the contact section or feel free to call us";
+      }
+      if (["ok", "thanks", "bye", "thank you", "thankyou"].includes(message)) {
+        return "Bye! Have a stylish day ✨";
+      }
+      return "Sorry, I didn’t understand that. Please ask about: price, open time, close time, or contact number.";
+    }
+  </script>
 </body>
 </html>
